@@ -50,9 +50,7 @@ header #mobile_menu{
 	padding:20px 3%;
 }
 header #mobile_menu a span{
-	font-size:5vw;		
-	z-index:2;
-	transition: all 0.3s ease-in-out;
+	font-size:8vw;		
 }
 header #mobile_menu a:hover{
 	color:black;
@@ -88,15 +86,15 @@ header #mobile_menu ul{
 	position:absolute;
 	top:0;
 	left:0;
-	padding: 40px 30px;
-	font-size:5vw;		
+	padding: 2.5vh 3vw;
+	font-size:8vw;		
 	z-index:2;
 	color:white;
 }
 
 #menu>div>a{
 	color:white;
-	font-size:1.5rem;
+	font-size:1.1rem;
 	padding:15px 5%;
 	text-transform:uppercase;
 }
@@ -109,8 +107,9 @@ header #mobile_menu ul{
 }
 #mobile_3icons ul li{
 	color:white;
-	margin:25px;
+	margin:0 3.5vw;
 }
+
 /***서브메뉴 나중에...***/
 #menu>div>nav{
 	display:none;
@@ -351,7 +350,7 @@ figcaption:hover{
 	object-fit: cover;
 }
 .amfigure div a p{
-	font-size: 2rem;
+	font-size: 1.5rem;
 	margin-left: auto;
 	margin-right: auto;
 }
