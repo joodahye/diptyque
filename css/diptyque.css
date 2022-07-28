@@ -58,6 +58,7 @@ header #mobile_menu a:hover{
 header #mobile_menu>img{
 	width:10vw;
 	margin:auto;
+	transform:translateX(100px);
 }
 
 header #mobile_menu ul{
