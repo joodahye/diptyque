@@ -86,35 +86,34 @@ $(document).ready(function(){
 			
 			
 			/////뉴 좌우 버튼/////
-			const new1 = $("#new_pro figure").eq(0).outerWidth();
-			const new2 = new1 * (-1);
+			let new1 = $("#new_pro figure").eq(0).outerWidth();
+			let new2 = new1 * (-1);
 			$("#new_pro").css("left", new2 );
-		
-	
-			
 		//왼쪽버튼
 			$("#newBtn .leftBtn").click(function(){
-				newLeft()
+				newLeft();
 			});
 			//오른쪽버튼
 			$("#newBtn .rightBtn").click(function(){
 				newRight()
 			});
-			//왼쪽방향으로 이동
-			function newLeft(){
-				$("#new_pro").stop().animate({left: new2 *2 },"slow",function(){
-					   $("#new_pro").append( $("#new_pro figure").first() );
-					   $("#new_pro").css("left" ,new2)
+			//왼쪽방향으로
+			function  newLeft() {
+					$("#new_pro").stop().animate({left: new2 *2},"slow",function(){
+						$("#new_pro").append($("#new_pro figure").first());
+						$("#new_pro").css("left", new2)
+					});
+				
+			}
+			//오른쪽방향으로
+			function newRight(){
+				$("#new_pro").stop().animate({left:0},"slow",function(){
+					$("#new_pro").prepend($("#new_pro figure").last());
+					$("#new_pro").css("left", new2)
 				});
 			}
-			//오른쪽방향으로 이동
-
-	 		function newRight(){
-				$("#new_pro").stop().animate({left: 0 },"slow",function(){
-			  		 $("#new_pro").prepend( $("#new_pro figure").last() );
-			   		$("#new_pro").css("left" , new2 )
-		});
-	}
+		
+		
 		
 			/////홈데코/////
 			
@@ -123,14 +122,14 @@ $(document).ready(function(){
 			$("#homedecor_pro").css("left", home2 );
 			//왼쪽버튼
 			$("#homedecorBtn .leftBtn").click(function(){
-				newLeft()
+				homedecorLeft()
 			});
 			//오른쪽버튼
 			$("#homedecorBtn .rightBtn").click(function(){
-				newRight()
+				homedecorRight()
 			});
 			//왼쪽방향으로 이동
-			function newLeft(){
+			function homedecorLeft(){
 				$("#homedecor_pro").stop().animate({left: home2 *2 },"slow",function(){
 					   $("#homedecor_pro").append( $("#homedecor_pro figure").first() );
 					   $("#homedecor_pro").css("left" ,home2)
@@ -138,7 +137,7 @@ $(document).ready(function(){
 			}
 			//오른쪽방향으로 이동
 
-	 		function newRight(){
+	 		function homedecorRight(){
 				$("#homedecor_pro").stop().animate({left: 0 },"slow",function(){
 			  		 $("#homedecor_pro").prepend( $("#homedecor_pro figure").last() );
 			   		$("#homedecor_pro").css("left" , home2 )

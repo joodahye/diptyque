@@ -1,4 +1,4 @@
-@charset "utf-8"
+@charset "utf-8";
 
 @import url("http://db.onlinewebfonts.com/c/d6f7b417e8c5a8b724893d00232cf6bf?family=Haarlemmer");
 
@@ -58,7 +58,6 @@ header #mobile_menu a:hover{
 header #mobile_menu>img{
 	width:10vw;
 	margin:auto;
-	transform:translateX(100px);
 }
 
 header #mobile_menu ul{
@@ -385,7 +384,7 @@ figcaption:hover{
 .textLine p{
 	margin-left:10px;
 	margin-right:20px;
-	padding-top: 15px;
+	padding:10px 0;
 	color:white;
 }
 .textLine img{
@@ -465,12 +464,14 @@ footer{
 	/*상단*/
 	header #mobile_menu>img{
 		width:5vw;
+		transform:translateX(100px);
 	}
 	header #mobile_menu ul{
 		display:block;
 		display:flex;	
 		list-style:none;
 	}
+	
 	header #mobile_menu ul li{
 		width:40px;
 		margin-right:10px;
@@ -484,6 +485,9 @@ footer{
 	}
 	
 	/*메뉴*/
+	#menu>a {
+		display: none;
+	}
 	#menu{
 		display:block;
 		background:none;
@@ -544,7 +548,7 @@ footer{
 		float:right;
 	}
 	
-		/*제품군(베스트)*/
+	/*제품군(베스트)*/
 	#bestseller{
 		position:relative;
 	}
@@ -727,7 +731,7 @@ footer{
 	}
 	/*홈데코버튼*/
 	#homedecorBtn{
-		top:78%;
+		top:80%;
 	}
 	
 	/*제품군(홈데코)*/
@@ -758,10 +762,11 @@ footer{
 			color:black;
 			text-align:center;
 		}
-.amfigure div a p{
+	.amfigure div a p{
 		font-size:1rem;
+		margin:20px;
 	}
-.amfigure div a img{
+	.amfigure div a img{
 		height:50vh;
 		width:25.5vw;
 	}
@@ -842,5 +847,5 @@ footer{
 		right:5.8vw;
 		bottom:13vh;*/
 	}
-}
+
 
